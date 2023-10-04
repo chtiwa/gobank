@@ -1,11 +1,23 @@
+GET http://localhost:3000/accounts/18
+x-jwt-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50TnVtYmVyIjozMzk0NCwiRXhwaXJlc0F0IjoxNTAwMH0.XfNXUn35o-POxVMAooGSLxwax38mY3NdI_1Dby7Z09c
+
+# POST http://localhost:3000/transfer
+# Content-Type: application/json
+# x-jwt-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50TnVtYmVyIjo3MjM4NjYsIkV4cGlyZXNBdCI6MTUwMDB9.K6R4bWVvAJFwArAYOphIc3exKsVFJESKavHQqpAbveI
+
+# {
+#     "toAccount" :27866,
+#     "ammount":100
+# }
+
 # DELETE http://localhost:3000/accounts/1
 
-GET http://localhost:3000/accounts
+# GET http://localhost:3000/accounts/4
 
 POST http://localhost:3000/accounts
 Content-Type: application/json
 
 {
-    "firstName":"Jack",
-    "lastName":"Smith"
+    "firstName":"William",
+    "lastName":"The Great"
 }
