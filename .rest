@@ -1,5 +1,5 @@
-GET http://localhost:3000/accounts/18
-x-jwt-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50TnVtYmVyIjozMzk0NCwiRXhwaXJlc0F0IjoxNTAwMH0.XfNXUn35o-POxVMAooGSLxwax38mY3NdI_1Dby7Z09c
+# GET http://localhost:3000/accounts/18
+# x-jwt-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50TnVtYmVyIjozMzk0NCwiRXhwaXJlc0F0IjoxNTAwMH0.XfNXUn35o-POxVMAooGSLxwax38mY3NdI_1Dby7Z09c
 
 # POST http://localhost:3000/transfer
 # Content-Type: application/json
@@ -14,10 +14,18 @@ x-jwt-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50TnVtYmVyIjozMzk0NCw
 
 # GET http://localhost:3000/accounts/4
 
-POST http://localhost:3000/accounts
+# POST http://localhost:3000/accounts
+# Content-Type: application/json
+
+# {
+#     "firstName":"William",
+#     "lastName":"The Great"
+# }
+
+POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "firstName":"William",
-    "lastName":"The Great"
+    "number":9999999,
+    "password":"password"
 }
